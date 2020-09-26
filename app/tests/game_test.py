@@ -26,3 +26,15 @@ class TestGame(unittest.TestCase):
     def test_rps_game__player1_wins__with_paper(self):
         result = self.game1.rps_game(self.player_paper.choice, self.player_rock.choice)
         self.assertEqual("Player 1 wins!!", result)
+
+    def test_rps_game__player2_wins__with_rock(self):
+        result = self.game1.rps_game(self.player_scissors.choice, self.player_rock.choice)
+        self.assertEqual("Player 2 wins!!", result)
+
+    def test_rps_game__player2_wins__with_scissors(self):
+        result = self.game1.rps_game(self.player_paper.choice, self.player_scissors.choice)
+        self.assertEqual("Player 2 wins!!", result)
+
+    def test_rps_game__player2_wins__with_paper(self):
+        result = self.game1.rps_game(self.player_rock.choice, self.player_paper.choice)
+        self.assertEqual("Player 2 wins!!", result)
