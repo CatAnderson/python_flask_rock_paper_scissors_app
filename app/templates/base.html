@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ title }} Rock Paper Scissors Game</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="Rock Paper Scissors Logo">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/game">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block welcome %}{% endblock welcome %}
+
+    {% block game %}{% endblock game %}
+
+    {% block results %}{% endblock results %}
+
+
+
+    <footer>
+        created by Clementine Studios.
+    </footer>
+</body>
+</html>

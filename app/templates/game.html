@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block game %}
+
+    <main>
+        <h1>GAME TIME!!</h1>
+        <h3></h3>
+
+        <form action="/result" method="POST">
+            <h2>Player One</h2>
+            <h3>take your pick</h3>
+
+            <label for="player1_name">Name</label>
+            <input type="text" name="player1_name" id="player1_name" required>
+
+            <label for="player1_choice">Pick Rock, Paper or Scissors</label>
+            <select name="player1_choice" id="player1_choice" required>
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+            </select>
+        
+            <h2>Player Two</h2>
+            <h3>make your choice</h3>
+
+            <label for="player2_name">Name</label>
+            <input type="text" name="player2_name" id="player2_name" required>
+
+            <label for="player2_choice">Pick Rock, Paper or Scissors</label>
+            <select name="player2_choice" id="player2_choice" required>
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+            </select>
+        
+            <div>
+                <input type="submit" id="submit" value="Play!!">
+            </div>
+        </form>
+    </main>    
+
+
+{% endblock %}
