@@ -26,8 +26,9 @@
     margin: 40px;
 }
 
-.play-button-block{
-    display: flex;
+.play-button-block {
+    display: grid;
+    grid-template-columns: max-content;
     justify-content: center;
     align-self: center;
 }
