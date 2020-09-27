@@ -1,0 +1,45 @@
+.form-block {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    margin: auto;
+}
+
+.player-1-block {
+    display: block;
+    background-color: #03bdca;
+    box-shadow: 5px 5px 15px 5px #06767e;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 35px;
+    margin: 40px;
+}
+
+.player-2-block {
+    display: block;
+    background-color: #ce1f94 ;
+    box-shadow: 5px 5px 15px 5px #8b1464;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 35px;
+    margin: 40px;
+}
+
+.play-button-block{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.play-button {
+    background-color: #ce1f94;
+    color: #ffffff;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 50px;
+    font-weight: 800;
+    font-size: 14pt;
+}
