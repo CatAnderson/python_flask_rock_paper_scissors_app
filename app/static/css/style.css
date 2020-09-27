@@ -44,13 +44,23 @@ body > main > section > ul > li {
 
 /* results page */
 
+body > main > div {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+
+}
+
 .play-again {
     background-color: #03bdca;
     color: #ffffff;
-    text-align: center;
+    font-weight: 800;
+    font-size: 14pt;
     display: block;
     width: 150px;
     height: 40px;
     border-radius: 5px;
+    padding-top: 20px;
     margin: 40px;
 }
