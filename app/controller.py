@@ -9,7 +9,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/game')
+@app.route('/play')
 def game_page():
     return render_template("game.html")
 
