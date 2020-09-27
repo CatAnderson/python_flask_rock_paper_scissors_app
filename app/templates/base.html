@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet"> 
 
     <title> {{ title }} Rock Paper Scissors Game</title>
 </head>
 <body>
     <header>
-        <img src="" alt="Rock Paper Scissors Logo">
+        <img class="company-logo" src="https://placebear.com/g/500/150" alt="Rock Paper Scissors Logo">
         <nav>
             <ul>
-                <li><a class="nav-bar" href="/">Home</a></li>
-                <li><a class="nav-bar" href="/game">Game</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/game">Game</a></li>
             </ul>
         </nav>
+        <div class="block-colour"></div>
     </header>
-
+    
     {% block welcome %}{% endblock welcome %}
 
     {% block game %}{% endblock game %}
 
     {% block results %}{% endblock results %}
+
+    <div class="block-colour"></div>
 
     <footer>
         created by Clementine Studios.

@@ -1,0 +1,28 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    /* margin: auto; */
+    text-align: center;
+    background-color: #f3dbf2;
+    margin: 0;
+}
+
+.block-colour {
+    background-color: #000000;
+    height: 20px;
+}
+
+.welcome-block {
+    width: 60vw;
+    height: 33vw;
+    justify-content: center;
+    margin: auto;
+}
+
+body > main > section > ul{
+    list-style: none;
+    font-weight: 600;
+    margin: 20px;
+}
+body > main > section > ul > li {
+    margin: 20px;
+}

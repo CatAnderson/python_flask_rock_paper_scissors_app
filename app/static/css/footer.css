@@ -1,0 +1,7 @@
+body > footer {
+    background-image: linear-gradient(to right, #ce1f94, #03bdca);
+    color: #ffffff;
+    padding: 20px;
+
+    align-items: center;    
+}
