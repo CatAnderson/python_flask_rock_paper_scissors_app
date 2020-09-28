@@ -7,6 +7,7 @@ class Game():
     def rps_game(self, player1_choice, player2_choice):
         if (player1_choice == "rock" and player2_choice == "scissors") or (player1_choice == "scissors" and player2_choice == "paper") or (player1_choice == "paper" and player2_choice == "rock"):
             return "Player 1 wins!!"
+            # return f"{player1.choice} beats {player2.choice}, congrats {player1.name}."
 
         elif (player1_choice == "rock" and player2_choice == "paper") or (player1_choice == "scissors" and player2_choice == "rock") or (player1_choice == "paper" and player2_choice == "scissors"):
             return "Player 2 wins!!"
